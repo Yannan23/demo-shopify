@@ -9,7 +9,7 @@
     <title>Demo Shopify</title>
     <style>
         body {
-            background-color: #f1f5f6;
+            background-color: #69d1eb;
         }
 
         .flex {
@@ -51,8 +51,8 @@
             background-color: white;
         }
 
-        .best-prices-section .banner-img {
-            width: 40%;
+        .bg-red {
+            background-color: red;
         }
 
         .color-red {
@@ -60,11 +60,50 @@
             text-transform: uppercase;
         }
 
+        .best-prices-section .banner-img {
+            width: 40%;
+        }
+
         .best-prices-section .product-card {
             padding: 20px;
             min-width: 25%;
-            /* width: 30%; */
-            background-color: rgb(233, 24, 24);
+        }
+
+        .best-prices-section .product-img {
+            width: 100%;
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        .absolute {
+            position: absolute;
+        }
+
+        .discount {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            left: 20px;
+            top: 20px;
+            width: 50px;
+            padding: 2px 10px;
+            color: white;
+            height: 30px;
+        }
+
+        .div-hover {
+            transition: transform 0.3s ease;
+        }
+
+        .div-hover:hover {
+            transform: translateY(-10px);
         }
     </style>
 </head>
@@ -92,11 +131,34 @@
             <img src="//demo-uminex.myshopify.com/cdn/shop/files/img_1_3.png?v=1673017886&width=3840" alt=""
                 class="banner-img">
             <div class="flex">
+                <div class="product-card relative">
+                    <img src="https://demo-uminex.myshopify.com/cdn/shop/products/products_12_2.jpg?v=1672302207&width=533"
+                        class="product-img" alt="">
+                    <div class="absolute bg-red discount">
+                        <p>-59%</p>
+                    </div>
+                    <div class="bg-white div-hover">
+                        <div>
+                            <h5>Labtop Apple MacBook Pro M1 16GB/512GB</h5>
+                            <div>review</div>
+                            <div>price</div>
+                            <div>sold</div>
+                        </div>
+                    </div>
+                </div>
                 <div class="product-card">
                     <img src="https://demo-uminex.myshopify.com/cdn/shop/products/products_12_2.jpg?v=1672302207&width=533"
-                        alt="">
+                        class="product-img" alt="">
+
                 </div>
                 <div></div>
+                <div class="product-card">
+                    <img src="https://demo-uminex.myshopify.com/cdn/shop/products/products_12_2.jpg?v=1672302207&width=533"
+                        class="product-img" alt="">
+                    <div class="color-red box-count">-69%</div>
+                </div>
+                <div></div>
+
                 <div></div>
             </div>
         </div>
